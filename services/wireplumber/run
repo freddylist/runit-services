@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# usv check pipewire >/dev/null || exit 1
+
+[ -r ./conf ] && . ./conf
+
+exec 2>&1
+exec wireplumber
